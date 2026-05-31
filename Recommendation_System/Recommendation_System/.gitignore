@@ -55,4 +55,4 @@ data/
 # FastAPI / Uvicorn
 # =========================
 *.sqlite3
-*.db
+*.dbmodels/ 
