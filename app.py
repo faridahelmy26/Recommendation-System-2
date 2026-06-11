@@ -11,9 +11,11 @@ content_df = None
 cosine_sim = None
 model = None
 
-@app.on_event("startup")
-async def load_data():
+def load_data():
     global content_df, cosine_sim, model
+    
+    if content_df is not None:
+        return  # Already loaded
     
     content_df = pd.read_csv("data/content.csv")
     interactions_df = pd.read_csv("data/interactions.csv")
@@ -28,7 +30,6 @@ async def load_data():
     model = SentenceTransformer('all-MiniLM-L6-v2')
     embeddings = model.encode(content_df['text'].tolist())
     cosine_sim = cosine_similarity(embeddings)
-
 
 # =========================
 # Helper Function
@@ -85,3 +86,7 @@ def recommend_by_title(title, top_n=5):
 @app.get("/recommend")
 def recommend(title: str, top_n: int = 5):
     return recommend_by_title(title, top_n)
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
