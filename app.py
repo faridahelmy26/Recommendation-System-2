@@ -42,16 +42,14 @@ cosine_sim = cosine_similarity(feature_matrix)
 # SAFE title -> content_id
 # =========================
 def get_content_id(title: str):
-
     query_vec = vectorizer.transform([title])
     sims = cosine_similarity(query_vec, feature_matrix)
-
     idx = np.argmax(sims)
-
-    # safety check
-    if sims[0][idx] == 0:
+    
+    # safety check - use a threshold instead of exact 0
+    if sims[0][idx] < 0.1:   
         return None
-
+    
     return int(content_df.iloc[idx]["content_id"])
 
 
