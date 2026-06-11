@@ -46,10 +46,7 @@ def get_content_id(title: str):
     sims = cosine_similarity(query_vec, feature_matrix)
     idx = np.argmax(sims)
     
-    # safety check - use a threshold instead of exact 0
-    if sims[0][idx] < 0.1:   
-        return None
-    
+    # Always return the best match (no threshold)
     return int(content_df.iloc[idx]["content_id"])
 
 
