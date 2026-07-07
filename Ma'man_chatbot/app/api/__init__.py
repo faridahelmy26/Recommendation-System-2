@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-import time
 
 from app.api.routes import admin, chat, stats
 from app.models.database import Database
@@ -62,7 +61,6 @@ def home():
 @app.get("/health")
 def health_check():
     """Health check endpoint - always returns success"""
-    # Return success immediately, don't wait for database
     return {
         "status": "healthy",
         "database": "connected" if _db_initialized else "initializing",
