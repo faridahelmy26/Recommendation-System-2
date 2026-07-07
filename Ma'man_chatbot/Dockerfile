@@ -21,5 +21,5 @@ RUN mkdir -p /app/data
 # Expose port
 EXPOSE 8000
 
-# Run application
-CMD ["uvicorn", "app.api:app", "--host", "0.0.0.0", "--port", "8000"]
+# Run application with longer startup time
+CMD ["uvicorn", "app.api:app", "--host", "0.0.0.0", "--port", "8000", "--timeout-keep-alive", "120"]
