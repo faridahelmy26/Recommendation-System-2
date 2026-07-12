@@ -1,0 +1,275 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# =========================
+# Virtual Environment
+# =========================
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+virtualenv/
+.venv/
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+desktop.ini
+*.code-workspace
+.vs/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*.pynb
+*.pyc
+
+# =========================
+# Project Specific - Models
+# =========================
+#models/
+#*.pkl
+*.pickle
+#*.joblib
+*.h5
+*.pb
+*.onnx
+*.npy
+*.npz
+*.sav
+
+# =========================
+# Project Specific - Data
+# =========================
+#data/
+#*.csv
+#*.xlsx
+*.xls
+#*.json
+*.parquet
+*.db
+*.sqlite
+*.sqlite3
+*.feather
+
+# =========================
+# Project Specific - Cache & Logs
+# =========================
+#cache/
+#logs/
+*.log
+*.tmp
+*.temp
+*.cache
+
+# =========================
+# Project Specific - Embeddings
+# =========================
+content_embeddings.pkl
+content_embeddings.npy
+*.embed
+*.emb
+
+# =========================
+# Testing
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+*.cover
+*.pyre/
+
+# =========================
+# Documentation
+# =========================
+site/
+docs/_build/
+*.rdb
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.local
+.env.*.local
+*.env
+*.env.local
+*.env.*.local
+
+# =========================
+# OS Files
+# =========================
+Thumbs.db
+.DS_Store
+*.bak
+*.orig
+*.old
+
+# =========================
+# Large Files
+# =========================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.bin
+*.raw
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.mp3
+*.wav
+*.flac
+*.iso
+*.dmg
+*.pkg
+*.deb
+*.rpm
+
+# =========================
+# Temporary Files
+# =========================
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# =========================
+# Deployment
+# =========================
+*.pid
+*.lock
+*.secrets
+*.secret
+*.key
+*.pem
+*.crt
+*.cert
+*.csr
+*.keyring
+
+# =========================
+# Profiling
+# =========================
+*.prof
+*.profile
+*.pstats
+*.lcov
+*.gcno
+*.gcda
+*.gch
+
+# =========================
+# MyPy
+# =========================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# =========================
+# Pyre
+# =========================
+.pyre/
+
+# =========================
+# Pytype
+# =========================
+.pytype/
+
+# =========================
+# Bandit
+# =========================
+.bandit
+
+# =========================
+# Coverage
+# =========================
+.coverage
+.coverage.*
+.coverage.xml
+*.cover
+htmlcov/
+.coverage.lcov
+
+# =========================
+# Docker
+# =========================
+*.pid
+*.sock
+*.socket
+*.vol
+*.volume
+*.volumes
+
+# =========================
+# Server
+# =========================
+*.log
+*.pid
+*.lock
+*.socket
+*.sock
+
+# =========================
+# Project Specific - Extra
+# =========================
+*.original
+*.backup
+*.bak
+*.old
+*.save
+*.dump
+*.backup.*
+
+# =========================
+# Railway / Heroku
+# =========================
+#*.railway
+*.heroku
+#*.procfile
+*.profile

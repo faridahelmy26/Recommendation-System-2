@@ -1,0 +1,38 @@
+# ============================================
+# Core Data Processing
+# ============================================
+pandas>=1.5.0
+numpy>=1.24.0
+openpyxl>=3.0.0
+
+# ============================================
+# Machine Learning & Embeddings
+# ============================================
+sentence-transformers>=2.2.0
+scikit-learn>=1.2.0
+torch>=2.0.0
+transformers>=4.25.0
+scipy>=1.10.0
+
+# ============================================
+# API
+# ============================================
+fastapi>=0.95.0
+uvicorn>=0.21.0
+pydantic>=1.10.0
+
+# ============================================
+# Utilities
+# ============================================
+tqdm>=4.64.0
+
+# ============================================
+# Visualization (notebook / evaluation only)
+# ============================================
+matplotlib>=3.6.0
+
+# ============================================
+# Optional (for production scale-out)
+# ============================================
+# redis>=4.5.0        # for distributed caching instead of in-memory dict
+# sqlalchemy>=2.0.0    # if moving off flat files to a real database
